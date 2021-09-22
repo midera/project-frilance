@@ -12,7 +12,7 @@ import Profile from "./pages/Profile/Profile";
 import Auth from "./pages/Auth";
 import HomePage from "./pages/Home/HomePage";
 import Admin from "./pages/Admin";
-import Advertisement from "./pages/advertisement/Advertisement";
+import Advertisement from "./components/advertisement/Advertisement";
 
 export const authRoutes = [
     {
