@@ -12,10 +12,10 @@ const AdvertisementWorkBar = observer(() => {
                 advertisement.advertisementWork.map(advert =>
                     <Card
                         style={{cursor:'pointer'}}
-                        key={advert.id} className="p-3"
+                        key={advert.id} className="p-3 text-black-50"
                           onClick={() => advertisement.setSelectedAdvertisementWork(advert)}
                     border={advert.id === advertisement.selectedAdvertisementWork.id ? 'danger':'light'}>
-                        {advert.title}
+                        <li>{advert.title}</li>
 
                     </Card>)
             }

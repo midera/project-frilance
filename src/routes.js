@@ -8,11 +8,11 @@ import {
     WORKING_ROUTE
 } from "./utils/consts";
 import Customer from "./pages/Customer/Customer";
-import Profile from "./pages/Profile/Profile";
 import Auth from "./pages/Auth";
 import HomePage from "./pages/Home/HomePage";
 import Admin from "./pages/Admin";
 import Advertisement from "./components/advertisement/Advertisement";
+import Profile from "./components/Profile/Profile";
 
 export const authRoutes = [
     {

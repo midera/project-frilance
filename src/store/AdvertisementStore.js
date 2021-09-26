@@ -4,9 +4,26 @@ export default class AdvertisementStore {
     constructor() {
         this._types = [
             {id: 1, title: "Type of work"},
-            {id: 2, title: "Choose a city"},
 
         ]
+        this._cityName = [
+            {id: 1, city: "Kyiv"},
+            {id: 2, city: "Dnipro"},
+            {id: 3, city: "Lviv"},
+            {id: 4, city: "Donetsk"},
+            {id: 5, city: "Kharkiv"},
+            {id: 6, city: "Vinnytsia"},
+            {id: 7, city: "Zhytomyr"},
+            {id: 8, city: "Zaporizhzhia"},
+            {id: 9, city: "Ivano-Frankivsk"},
+            {id: 10, city: "Luhansk"},
+            {id: 11, city: "Odesa"},
+            {id: 13, city: "Poltava"},
+            {id: 14, city: "Rivne"},
+            {id: 15, city: "Mykolaiv"},
+            {id: 16, city: "Simferopol"},
+            {id: 17, city: "Khmelnytskyi"},
+            {id: 18, city: "Sumy"}]
         this._advertisementWork = [
             {id: 1, title: "Все"},
             {id: 2, title: "Сварочные работы"},
@@ -116,20 +133,30 @@ export default class AdvertisementStore {
 
         ]
         this._profiles = [
-            {id: 1, name: "Leanne Graham"},
-            {id: 2, name: "Ervin Howell"},
-            {id: 3, name: "Clementine Bauch"},
-            {id: 4, name: "Patricia Lebsack"},
-            {id: 5, name: "Chelsey Dietrich"}
+            {id: 1, name: "Leanne Graham",img:`https://futureu.europa.eu/assets/decidim/default-avatar-43686fd5db4beed0141662a012321bbccd154ee1d9188b0d1f41e37b710af3cb.svg`},
+            {id: 2, name: "Ervin Howell",img:`https://futureu.europa.eu/assets/decidim/default-avatar-43686fd5db4beed0141662a012321bbccd154ee1d9188b0d1f41e37b710af3cb.svg`},
+            {id: 3, name: "Clementine Bauch",img:`https://futureu.europa.eu/assets/decidim/default-avatar-43686fd5db4beed0141662a012321bbccd154ee1d9188b0d1f41e37b710af3cb.svg`},
+            {id: 4, name: "Patricia Lebsack",img:`https://futureu.europa.eu/assets/decidim/default-avatar-43686fd5db4beed0141662a012321bbccd154ee1d9188b0d1f41e37b710af3cb.svg`},
+            {id: 5, name: "Chelsey Dietrich",img:`https://futureu.europa.eu/assets/decidim/default-avatar-43686fd5db4beed0141662a012321bbccd154ee1d9188b0d1f41e37b710af3cb.svg`},
+            {id: 6, name: "Chelsey Dietrich",img:`https://futureu.europa.eu/assets/decidim/default-avatar-43686fd5db4beed0141662a012321bbccd154ee1d9188b0d1f41e37b710af3cb.svg`},
+            {id: 7, name: "Chelsey Dietrich",img:`https://futureu.europa.eu/assets/decidim/default-avatar-43686fd5db4beed0141662a012321bbccd154ee1d9188b0d1f41e37b710af3cb.svg`},
+            {id: 8, name: "Chelsey Dietrich",img:`https://futureu.europa.eu/assets/decidim/default-avatar-43686fd5db4beed0141662a012321bbccd154ee1d9188b0d1f41e37b710af3cb.svg`},
+            {id: 9, name: "Chelsey Dietrich",img:`https://futureu.europa.eu/assets/decidim/default-avatar-43686fd5db4beed0141662a012321bbccd154ee1d9188b0d1f41e37b710af3cb.svg`},
+            {id: 10, name: "Chelsey Dietrich",img:`https://futureu.europa.eu/assets/decidim/default-avatar-43686fd5db4beed0141662a012321bbccd154ee1d9188b0d1f41e37b710af3cb.svg`}
 
         ]
         this._selectedTypes = {}
+        this._selectedCityName = {}
         this._selectedAdvertisementWork = {}
         makeAutoObservable(this)
     }
 
     setTypes(types) {
         this._types = types;
+    }
+
+    setCityName(cityName) {
+        this._cityName = cityName
     }
 
     setAdvertisementList(list) {
@@ -144,6 +171,10 @@ export default class AdvertisementStore {
         this._selectedTypes = type;
     }
 
+    setSelectedCityName(name) {
+        this._selectedCityName=name;
+    }
+
     setSelectedAdvertisementWork(advert) {
         this._selectedAdvertisementWork = advert;
     }
@@ -151,6 +182,10 @@ export default class AdvertisementStore {
 
     get types() {
         return this._types
+    }
+
+    get cityName() {
+        return this._cityName;
     }
 
     get profiles() {
@@ -168,6 +203,10 @@ export default class AdvertisementStore {
     get selectedTypes() {
         return this._selectedTypes
     }
+    get selectedCityName() {
+        return this._selectedCityName
+    }
+
 
     get selectedAdvertisementWork() {
         return this._selectedAdvertisementWork
