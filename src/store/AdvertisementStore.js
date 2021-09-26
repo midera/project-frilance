@@ -22,15 +22,96 @@ export default class AdvertisementStore {
             {id: 12, title: "другие работы"}
         ]
         this._advertisementList = [
-            {id: 1, title: "Все"},
-            {id: 2, title: "Сварочные работы"},
-            {id: 3, title: "кладка кирпича"},
-            {id: 4, title: "Установка ворот заборов"},
-            {id: 5, title: "Кровельные работы"},
-            {id: 6, title: "Бетонные работы"},
-            {id: 7, title: "Строительство мелких конструций"},
-            {id: 8, title: "Архитектура проектирование"},
-            {id: 9, title: "Монтаж вентиляций"},
+            {
+                id: 1,
+                title: "Все",
+                img: `https://d2e70e9yced57e.cloudfront.net/wallethub/images/posts/19455/how-long-does-it-take-to-build-credit.jpg`,
+                rating: 4.2
+            },
+            {
+                id: 2,
+                title: "Сварочные работы",
+                img: `https://d2e70e9yced57e.cloudfront.net/wallethub/images/posts/19455/how-long-does-it-take-to-build-credit.jpg`,
+                rating: 4.2
+            },
+            {
+                id: 3,
+                title: "кладка кирпича",
+                img: `https://d2e70e9yced57e.cloudfront.net/wallethub/images/posts/19455/how-long-does-it-take-to-build-credit.jpg`,
+                rating: 4.2
+            },
+            {
+                id: 4,
+                title: "Установка ворот заборов",
+                img: `https://d2e70e9yced57e.cloudfront.net/wallethub/images/posts/19455/how-long-does-it-take-to-build-credit.jpg`,
+                rating: 4.2
+            },
+            {
+                id: 5,
+                title: "Кровельные работы",
+                img: `https://d2e70e9yced57e.cloudfront.net/wallethub/images/posts/19455/how-long-does-it-take-to-build-credit.jpg`,
+                rating: 4.2
+            },
+            {
+                id: 6,
+                title: "Бетонные работы",
+                img: `https://d2e70e9yced57e.cloudfront.net/wallethub/images/posts/19455/how-long-does-it-take-to-build-credit.jpg`,
+                rating: 4.2
+            },
+            {
+                id: 7,
+                title: "Строительство мелких конструций",
+                img: `https://d2e70e9yced57e.cloudfront.net/wallethub/images/posts/19455/how-long-does-it-take-to-build-credit.jpg`,
+                rating: 4.2
+            },
+            {
+                id: 8,
+                title: "Архитектура проектирование",
+                img: `https://d2e70e9yced57e.cloudfront.net/wallethub/images/posts/19455/how-long-does-it-take-to-build-credit.jpg`,
+                rating: 4.2
+            },
+            {
+                id: 9,
+                title: "Монтаж вентиляций",
+                img: `https://d2e70e9yced57e.cloudfront.net/wallethub/images/posts/19455/how-long-does-it-take-to-build-credit.jpg`,
+                rating: 4.2
+            },
+            {
+                id: 10,
+                title: "Монтаж вентиляций",
+                img: `https://d2e70e9yced57e.cloudfront.net/wallethub/images/posts/19455/how-long-does-it-take-to-build-credit.jpg`,
+                rating: 4.2
+            },
+            {
+                id: 11,
+                title: "Монтаж вентиляций",
+                img: `https://d2e70e9yced57e.cloudfront.net/wallethub/images/posts/19455/how-long-does-it-take-to-build-credit.jpg`,
+                rating: 4.2
+            },
+            {
+                id: 12,
+                title: "Монтаж вентиляций",
+                img: `https://d2e70e9yced57e.cloudfront.net/wallethub/images/posts/19455/how-long-does-it-take-to-build-credit.jpg`,
+                rating: 4.2
+            },
+            {
+                id: 13,
+                title: "Монтаж вентиляций",
+                img: `https://d2e70e9yced57e.cloudfront.net/wallethub/images/posts/19455/how-long-does-it-take-to-build-credit.jpg`,
+                rating: 4.2
+            },
+            {
+                id: 14,
+                title: "Монтаж вентиляций",
+                img: `https://d2e70e9yced57e.cloudfront.net/wallethub/images/posts/19455/how-long-does-it-take-to-build-credit.jpg`,
+                rating: 4.2
+            },
+            {
+                id: 15,
+                title: "Монтаж вентиляций",
+                img: `https://d2e70e9yced57e.cloudfront.net/wallethub/images/posts/19455/how-long-does-it-take-to-build-credit.jpg`,
+                rating: 4.2
+            },
 
 
         ]
